@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './ad_card.dart';
+import './category.dart';
 
 class HomeBody extends StatelessWidget {
   @override
@@ -7,7 +8,9 @@ class HomeBody extends StatelessWidget {
     return ListView(
       children: <Widget>[
         AdCard(),
-      Center(child: Text('categories'),),
+      Center(child: Text('Categories', style: TextStyle(fontSize: 20),),),
+      SizedBox(height: 10),
+      Catgories()
       ],
     );
   }
